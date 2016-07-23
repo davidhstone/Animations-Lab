@@ -11,4 +11,35 @@
     tools:context="generalassembly.yuliyakaleda.startercode.MainActivity">
 
     <!-- TODO: add edit text, button, text view and a view group-->
+
+    <EditText
+        android:id="@+id/wish_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your wish here"
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/wish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wish_edittext"
+        android:layout_centerHorizontal="true"
+        android:text="Add your wish!"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wish_textview"
+        android:text="Your Wish"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wish_listview"
+        android:layout_below="@id/wish_textview">
+    </ListView>
+
 </RelativeLayout>
